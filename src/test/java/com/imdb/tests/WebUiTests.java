@@ -7,7 +7,7 @@ public class WebUiTests {
     MainPage mainPage = new MainPage();
 
     @Test
-    public void openMainPage(){
+    public void openMainPage() {
         mainPage.openMainPage()
                 .openProPage();
     }
