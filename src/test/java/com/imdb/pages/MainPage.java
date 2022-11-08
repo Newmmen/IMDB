@@ -28,6 +28,7 @@ public class MainPage {
         $("[data-testid='panel']").shouldBe(Condition.disappear);
         return this;
     }
+
     @Step("Open IMDB pro page")
     public MainPage openProPage() {
         $("#imdbHeader .navbar__imdbpro").click();
