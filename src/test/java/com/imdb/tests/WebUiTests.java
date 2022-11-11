@@ -6,8 +6,10 @@ import com.imdb.testbase.Attach;
 import com.imdb.testbase.TestBase;
 import com.imdb.utils.UserData;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("webtests")
 public class WebUiTests extends TestBase {
 
     MainPage mainPage = new MainPage();

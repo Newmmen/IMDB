@@ -26,6 +26,7 @@ public class LoginPage {
 
         return this;
     }
+
     @Step("Login with empty Imdb account data")
     public LoginPage clickLoginWithEmptyImdbAccount() {
         $("#signInSubmit").click();
