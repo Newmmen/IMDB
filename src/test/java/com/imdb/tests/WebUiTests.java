@@ -30,6 +30,7 @@ public class WebUiTests extends TestBase {
     public void openImdbProPage() {
         mainPage.openMainPage()
                 .openProPage();
+        Attach.addAttachments();
 
     }
 
@@ -38,6 +39,7 @@ public class WebUiTests extends TestBase {
     public void OpenBigSidePanel() {
         mainPage.openMainPage()
                 .openBigSidePanel();
+        Attach.addAttachments();
 
     }
 
@@ -47,6 +49,7 @@ public class WebUiTests extends TestBase {
         mainPage.openMainPage()
                 .openBigSidePanel()
                 .clickSectionOnBigPanel("TV News");
+        Attach.addAttachments();
 
     }
 
@@ -58,6 +61,7 @@ public class WebUiTests extends TestBase {
                 .openLoginPage();
         loginPage.clickLoginImdbAcc()
                 .loginWithImdbAccount(user.getUserEmail(), user.getUserName(), user.getUserPassword());
+        Attach.addAttachments();
 
 
     }
@@ -69,6 +73,7 @@ public class WebUiTests extends TestBase {
                 .openLoginPage();
         loginPage.clickLoginImdbAcc()
                 .clickLoginWithEmptyImdbAccount();
+        Attach.addAttachments();
 
 
     }
@@ -81,6 +86,7 @@ public class WebUiTests extends TestBase {
         loginPage.clickLoginImdbAcc()
                 .loginWithImdbAccount(user.getUserEmail(), user.getUserName(), user.getUserPassword());
         mainPage.signOutFromAccount(user.getUserName());
+        Attach.addAttachments();
 
 
     }

@@ -18,8 +18,8 @@ public class UserData {
         return userPassword;
     }
 
-    private String userEmail = config.getUserEmail();
-    private String userName = config.getUserName();
-    private String userPassword = config.getUserPassword();
+    private final String userEmail = config.getUserEmail();
+    private final String userName = config.getUserName();
+    private final String userPassword = config.getUserPassword();
 
 }
