@@ -20,6 +20,8 @@ public class TestBase {
             Configuration.remote = System.getProperty("selenide.remote");
         }
         Configuration.browserSize = System.getProperty("browser_size", "1920x1080");
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("browser_version", "99.0");
 
     }
 }
