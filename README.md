@@ -1,4 +1,4 @@
-# Auto-testing project "IMDB.com"
+# Проект по автоматизации тестирования "IMDB.com"
 
 ## Содержание
 
@@ -12,7 +12,7 @@
 >
 > ➠ [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
 > 
-> ➠ [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
+> ➠ [Добавление в Jira тест-кейсов из Allure TestOps](#-добавления-в-jira-с-тест-кейсов-из-allure-testops)
 >
 > ➠ [Пример запуска теста в Selenoid](#-пример-запуска-теста-в-selenoid)
 
@@ -98,12 +98,17 @@ user.password={user password}
 
 ### :scroll: Основной дашборд в <code>Allure</code>
 
+> После завершения сборки, запуск отображается в <code>Allure</code>.
+
+
 <p align="center">
-<img title="Allure TestOps Overview Dashboard" src="images/screens/allure.PNG">
+<img title="Allure Overview Dashboard" src="images/screens/allure.PNG">
 </p>
 
 
 ### :scroll: Основной дашборд в <code>Allure TestOps</code>
+
+> После завершения сборки, запуск отображается в <code>Allure TestOp</code>.
 
 <p align="center">
 <img title="Allure TestOps Overview Dashboard" src="images/screens/AllureTestOps.PNG">
@@ -119,6 +124,8 @@ user.password={user password}
 </p>
 
 ### :scroll: Интеграция <code>Allure TestOps</code> с <code>Jira</code>
+
+> После завершения сборки, запуск отображается в <code>Allure TestOp</code>, автоматически обрабатывает и отображается в <code>Jira</code>.
 
 <p align="center">
 <img title="Allure Overview" src="images/screens/Jira.PNG">
