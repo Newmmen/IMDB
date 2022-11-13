@@ -21,7 +21,7 @@ public class MainPage {
 
     @Step("Open big side panel on main page")
     public MainPage openBigSidePanel() {
-        $("#imdbHeader .ipc-button__text").click(); // исправить селектор т.к это просто 1я кнопка из 13 вот и кликает
+        $("#imdbHeader").find(byText("Menu")).click();
         $("[data-testid='panel']").shouldBe(Condition.visible);
         return this;
     }
