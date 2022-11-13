@@ -95,7 +95,7 @@ test
 ### :scroll: Основной дашборд
 
 <p align="center">
-<img title="Allure TestOps Overview Dashboard" src="images/screens/AllureTestOps.png">
+<img title="Allure TestOps Overview Dashboard" src="images/screens/AllureTestOps.PNG">
 </p>
 
 
@@ -104,13 +104,13 @@ test
 > После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне.
 
 <p align="center">
-<img title="Telegram Notifications" src="images/screens/Telegram.png">
+<img title="Telegram Notifications" src="images/screens/Telegram.PNG">
 </p>
 
 ### :scroll: Интеграция <code>Allure TestOps</code> с <code>Jira</code>
 
 <p align="center">
-<img title="Allure Overview" src="images/screens/Jira.png">
+<img title="Allure Overview" src="images/screens/Jira.PNG">
 </p>
 
 ## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> Пример запуска теста в Selenoid
