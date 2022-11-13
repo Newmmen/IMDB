@@ -66,12 +66,20 @@ gradle clean test
 
 ```
 clean
-test
--Dbrowser_name=${BROWSER_NAME}
--Dbrowser_size=${BROWSER_SIZE}
--Dbrowser_version=${BROWSER_VERSION}
+WebTests
 -Dselenide.remote=${REMOTE}
+-Dbrowser_size=${BROWSER_SIZE}
+-Dbrowser_name=${BROWSER_NAME}
+-Dbrowser_version=${BROWSER_VERSION}
 ```
+### :desktop_computer: Добавить файл <code>credentials.properties</code> с зарегестрированым аккаунтом IMDB.com
+```
+user.email={user email}
+user.name={user name}
+user.password={user password}
+
+```
+
 
 ### :desktop_computer: Параметры сборки
 
