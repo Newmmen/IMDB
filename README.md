@@ -84,11 +84,6 @@ test
 > <code>BROWSER*SIZE</code> – размер окна браузера, в котором будут выполняться тесты (*по умолчанию - <code>1920x1080</code>\_).
 
 
-### :scroll: Главная страница Allure-отчета
-
-<p align="center">
-<img title="Allure Overview" src="images/screens/allureMainPage.png">
-</p>
 
 ### :scroll: Группировка тестов по проверяемому функционалу
 
@@ -100,7 +95,7 @@ test
 ### :scroll: Основной дашборд
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/allureGraphs.png">
+<img title="Allure TestOps Overview Dashboard" src="images/screens/AllureTestOps.png">
 </p>
 
 
@@ -109,12 +104,18 @@ test
 > После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне.
 
 <p align="center">
-<img title="Telegram Notifications" src="images/screens/Tele.png">
+<img title="Telegram Notifications" src="images/screens/Telegram.png">
+</p>
+
+### :scroll: Интеграция <code>Allure TestOps</code> с <code>Jira</code>
+
+<p align="center">
+<img title="Allure Overview" src="images/screens/Jira.png">
 </p>
 
 ## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> Пример запуска теста в Selenoid
 
 > К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
-  <img title="Selenoid Video" src="images/gif/selenoid.gif">
+  <img title="Selenoid Video" src="images/gifs/Selenoid.gif">
 </p>
