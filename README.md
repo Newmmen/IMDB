@@ -11,6 +11,8 @@
 > ➠ [Отчет о результатах тестирования в Allure Report](#skier-главная-страница-allure-отчета)
 >
 > ➠ [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
+> 
+> ➠ [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
 >
 > ➠ [Пример запуска теста в Selenoid](#-пример-запуска-теста-в-selenoid)
 
@@ -93,14 +95,15 @@ user.password={user password}
 
 
 
-### :scroll: Группировка тестов по проверяемому функционалу
+
+### :scroll: Основной дашборд в <code>Allure</code>
 
 <p align="center">
-<img title="Allure Behaviors" src="images/screens/allureSuites.png">
+<img title="Allure TestOps Overview Dashboard" src="images/screens/allure.PNG">
 </p>
 
 
-### :scroll: Основной дашборд
+### :scroll: Основной дашборд в <code>Allure TestOps</code>
 
 <p align="center">
 <img title="Allure TestOps Overview Dashboard" src="images/screens/AllureTestOps.PNG">
