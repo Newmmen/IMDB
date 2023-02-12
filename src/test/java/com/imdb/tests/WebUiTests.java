@@ -2,12 +2,13 @@ package com.imdb.tests;
 
 import com.imdb.pages.LoginPage;
 import com.imdb.pages.MainPage;
-import com.imdb.testbase.Attach;
 import com.imdb.testbase.TestBase;
 import com.imdb.utils.UserData;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 @Tag("webtests")
 public class WebUiTests extends TestBase {
@@ -21,7 +22,6 @@ public class WebUiTests extends TestBase {
     @DisplayName("Open main page IMDB.com")
     public void openMainPage() {
         mainPage.openMainPage();
-        Attach.addAttachments();
 
     }
 
@@ -30,7 +30,6 @@ public class WebUiTests extends TestBase {
     public void openImdbProPage() {
         mainPage.openMainPage()
                 .openProPage();
-        Attach.addAttachments();
 
     }
 
@@ -39,17 +38,20 @@ public class WebUiTests extends TestBase {
     public void OpenBigSidePanel() {
         mainPage.openMainPage()
                 .openBigSidePanel();
-        Attach.addAttachments();
 
     }
 
-    @Test
+    @ParameterizedTest
+    @ValueSource(strings = {
+            "TV News",
+            "SXSW",
+            "Movie News"
+    })
     @DisplayName("Open section on big side panel")
-    public void OpenSectionOnSidePanel() {
+    public void OpenSectionOnSidePanel(String topic) {
         mainPage.openMainPage()
                 .openBigSidePanel()
-                .clickSectionOnBigPanel("TV News");
-        Attach.addAttachments();
+                .clickSectionOnBigPanel(topic);
 
     }
 
@@ -61,7 +63,6 @@ public class WebUiTests extends TestBase {
                 .openLoginPage();
         loginPage.clickLoginImdbAcc()
                 .loginWithImdbAccount(user.getUserEmail(), user.getUserName(), user.getUserPassword());
-        Attach.addAttachments();
 
 
     }
@@ -73,7 +74,6 @@ public class WebUiTests extends TestBase {
                 .openLoginPage();
         loginPage.clickLoginImdbAcc()
                 .clickLoginWithEmptyImdbAccount();
-        Attach.addAttachments();
 
 
     }
@@ -86,8 +86,6 @@ public class WebUiTests extends TestBase {
         loginPage.clickLoginImdbAcc()
                 .loginWithImdbAccount(user.getUserEmail(), user.getUserName(), user.getUserPassword());
         mainPage.signOutFromAccount(user.getUserName());
-        Attach.addAttachments();
-
 
     }
 

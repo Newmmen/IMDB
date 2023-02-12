@@ -1,8 +1,6 @@
 package com.imdb.pages;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.selector.ByText;
-import com.imdb.testbase.AttachHelper;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selectors.byTagAndText;
@@ -48,6 +46,7 @@ public class MainPage {
 
         return this;
     }
+
     @Step("Sign out from IMDB account")
     public MainPage signOutFromAccount(String userName) {
         $("#imdbHeader").find(byText(userName)).click();
